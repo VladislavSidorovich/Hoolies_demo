@@ -1,0 +1,24 @@
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
+
+	display: grid;
+	grid-template-areas:
+		'header'
+		'content'
+		'footer';
+
+	.header {
+		grid-area: header;
+		background-color: #0a1724;
+	}
+
+	.content {
+		grid-area: content;
+		// min-height: 90vh;
+	}
+
+	.footer {
+		grid-area: footer;
+	}
+}

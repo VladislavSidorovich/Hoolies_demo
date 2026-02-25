@@ -1,0 +1,28 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("./assets/fonts/hellvetica/Helvetica-4-Light.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  font-family: "Helvetica";
+  overflow: initial;
+  
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}

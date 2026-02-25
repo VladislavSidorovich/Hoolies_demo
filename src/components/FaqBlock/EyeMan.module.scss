@@ -1,0 +1,10 @@
+.eye_container_man{
+    position: absolute;
+    top: -25vw;
+    left: 2.75vw;
+    z-index: 1;
+
+    @media (max-width: 430px) {
+        display: none;
+    }
+}

@@ -1,0 +1,19 @@
+.eye_container_horse{
+    position: absolute;
+    top: -24.7vw;
+    left: -0.75vw;
+    z-index: 2;
+
+    @media (max-width: 430px) {
+        display: none;
+    }
+    
+    @media (max-width: 900px) {
+        display: none;
+    }
+
+    @media (max-width: 1930px) {
+        top: -24.7vw;
+        left: -0.75vw;
+    }
+}

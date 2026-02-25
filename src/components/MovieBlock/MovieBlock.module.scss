@@ -1,0 +1,225 @@
+.movie_block_video {
+	margin-top: -1.5%;
+	position: relative;
+	min-height: 30vh;
+	aspect-ratio: 16/9;
+	max-width: 100%;
+
+	@media (max-width: 930px) {
+		margin-top: 4.75%;
+	}
+
+	@media (max-width: 930px) and (max-height: 430px) {
+		margin-top: 6.5%;
+	}
+
+	@media (max-width: 430px) {
+		margin-top: 85px;
+		aspect-ratio: 6/4;
+	}
+
+	.videoWrapper{
+		width: 100%;
+	}
+	
+
+	.header_movie_block {
+		width: 58%;
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		position: absolute;
+		z-index: 10;
+		top: 7.5%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		@media (max-width: 930px) {
+			width: 80%;
+			top: 1%;
+		}
+
+		@media (max-width: 430px) {
+			width: 90%;
+			top: -9%;
+		}
+
+		.title {
+			width: 35%;
+			transition: all 0.2s;
+
+			img {
+				max-width: 60%;
+
+				@media (max-width: 430px) {
+					max-width: 90%;
+				}
+			}
+
+			&:hover {
+				transform: scale(1.02);
+			}
+		}
+
+		.premint {
+			width: 30%;
+			text-align: center;
+			margin: 5px;
+
+			img {
+				width: 90%;
+			}
+
+			@media (max-width: 430px) {
+				display: none;
+			}
+		}
+
+		.road_map {
+			width: 35%;
+			text-align: right;
+			transition: all 0.2s;
+			
+			img {
+				max-width: 60%;
+
+				@media (max-width: 430px) {
+					max-width: 90%;
+				}
+			}
+
+			&:hover {
+				transform: scale(1.02);
+			}
+		}
+	}
+
+	.background_pc {
+		aspect-ratio: 16/9;
+
+		@media (max-width: 900px) {
+			display: none;
+		}
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		
+	}
+
+	.light_pc {
+		aspect-ratio: 16/9;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		
+		@media (max-width: 900px) {
+			display: none;
+		}
+	}
+
+	.background_mobile {
+		display: none;
+
+		@media (max-width: 900px) {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 2;
+		}
+	}
+
+	.light_mobile {
+		display: none;
+
+		@media (max-width: 900px) {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+		}
+	}
+
+	.block_container {
+		width: 58.5%;
+		height: 54%;
+		display: flex;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -65%);
+		z-index: 3;
+
+		@media (max-width: 900px) {
+			width: 70%;
+			height: 64.5%;
+			top: 55%;
+		}
+
+		@media (max-width: 430px) {
+			width: 68%;
+			height: 57.5%;
+			top: 46%;
+			left: 47%;
+		}
+
+		.leftFrame {
+			width: 4%;
+		}
+
+		.rightFrame {
+			width: 4%;
+		}
+
+		.video {
+			width: 92%;
+			height: 100%;
+
+			@media (max-width: 930px) {
+				width: 100%;
+			}
+		}
+	}
+	
+	
+}
+
+
+// Файл: eye.module.scss
+$eye-size: 1rem; // Базовый размер глаза
+
+
+.transporent_block{
+	top: 6vw;
+	width: 58.5vw;
+	height: 7vw;
+	position: absolute;
+}
+
+.transporent_block_bottom{
+	top: 18vw;
+	width: 58.5vw;
+	height: 8vw;
+	position: absolute;
+}
+
+
+.eye-container {
+  width: $eye-size;
+  height: calc($eye-size * 1.11); // Соотношение высоты и ширины (180:200)
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .pupil {
+    transform-origin: center;
+    transition: transform 0.05s;
+  }
+}
+

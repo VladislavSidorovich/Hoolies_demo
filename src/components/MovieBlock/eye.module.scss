@@ -1,0 +1,14 @@
+.eye_container{
+    position: absolute;
+    top: 37.1vw;
+    left: -27.9vw;
+    z-index: 2;
+
+    @media (max-width: 430px) {
+        display: none;
+    }
+
+    @media (max-width: 900px) {
+        display: none;
+    }
+}
